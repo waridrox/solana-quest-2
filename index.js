@@ -41,3 +41,11 @@ const airDropSol = async () => {
         console.log(err);
     }
 };
+
+const driverFunction = async () => {
+    await getWalletBalance();
+    await airDropSol();
+    await getWalletBalance();
+}
+
+driverFunction();
